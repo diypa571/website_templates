@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>	  <!--Nedan finns meta och rubrik och även läken till den externa css filen-->
+  <meta charset="utf-8">
+ 	 <title>Webbutveckling 1 | START</title>   <!-- Rubrik-->
+	  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Använd senaste redneringsmotron, gäller för microsoft-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--  Webbsidan ska öppnas med width,bredd som webbläsaren har-->
+	  <meta name="robots" content="index, follow"/><!--  Kan vara bra för crawler..-->
+	  <meta name="description" content="Webbutveckling1"> <!--  Beskrivning av webbsidan, bra för sökmotorer-->
+	  <meta name="resource-type" content="document"/> <!--  Beskrivning av webbsidan, bra för sökmotorer-->
+	  <meta name="author" content="﻿diypa571"/> <!--  Kan vara bra att ha namn på författare-->
+	  <meta name="copyright" content="Webbutveckling1"/>
+    <!--Den externa css filen-->
+	  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+      <div class="gridbox1 aligncenter">
+
+  	 <!-- *Logo and menus-->
+              <div class="col bgfblue fullheight">
+                  <div class="aligncenter">
+                      <div class="seperator4"> </div>
+                <img class="rund1 shadow2 letbelarger" src="images/logo.png" alt="Logo" width="100">
+                  </div>
+
+                  <nav>
+                      <ul>
+                      <li class="bgfblack padding6 rund2"> <a class="navmenu"  href="index.html">  START </a>  </li>
+                      <li class="bgfblack padding6 rund2"> <a class="navmenu"  href="news.html">  GALAXY NEWS </a> </li>
+                      <li class="bgfblack padding6 rund2"><a class="navmenu"  href="command.html">  STARTFLEET COMMAND</a> </li>
+                      <li class="bgfblack padding6 rund2"> <a class="navmenu"  href="booking.html">  BOOK TRANSPORTATION </a>  </li>
+                      </ul>
+                  </nav>
+            </div>
+      <!-- /Logo and menus-->
+
+
+  	 <!-- *Höger kolumn-->
+    <div class="col alignleft">
+
+    <h1 class="padding10 aligncenter fblue ftn20"> BOOKING TRANSPORTATION  </h1>
+
+      	 <!--* Form-->
+   <form class="ftn ftn15" action="http://webshare.mah.se/tszagh/response.php" method="get">
+
+   <fieldset>
+     <legend class="ftn ftn18 fblue"> PLEAS HAVE YOUR  <strong>DOGECOIN</strong> BLOCKCHAIN PERSONAL ID READY FOR SCANING  </legend>
+         <label>NAME:</label>
+       <input type="text" id="namn" name="namn" placeholder="Ange namn" required><br>
+         <label>AGE:</label>
+       <input type="number"   name="age" placeholder="AGE" required>
+   </fieldset>
+   <div class="seperator10"> </div>
+
+
+   <fieldset>
+     <legend class="ftn ftn10">DETAILS</legend>
+      <p>
+        <label>SPECIES</label><br>
+            <select name="traveler-spec" class="ftn ftn10">
+            <option value="Volcan">Volcan</option>
+            <option value="Human">Human</option>
+            <option value="Bajoran">Bajoran</option>
+            <option value="Kardasian">Kardasian</option>
+            <option value="Romulan">Romulan</option>
+            <option value="Andorian">Andorian</option>
+            <option value="Klingon">Klingon</option>
+            <option value="Ferengi">Ferengi</option>
+            </select>
+      </p>
+
+
+    <p>
+    <label>CHOOSE STARTPOINT/TERMINAL</label><br>
+          <select name="start" class="ftn ftn10">
+          <option value="01">STAR FLEET BASE 01</option>
+          <option value="02">STAR FLEET BASE 01</option>
+          <option value="03">STAR FLEET BASE 03</option>
+          <option value="04">STAR FLEET BASE 04</option>
+          <option value="05">STAR FLEET BASE 05</option>
+          </select>
+    </p>
+
+  <p>
+  <label>CHOOSE DESTINATIN</label><br>
+        <select name="dest" class="ftn ftn10">
+        <option value="01">BAJOR</option>
+        <option value="02">VOLCAN</option>
+        <option value="03">BETA Z</option>
+        <option value="04">RISA</option>
+        <option value="05">FERENGINAR</option>
+        </select>
+  </p>
+
+
+  <p> <label>TRAVELING STARDATE</label><br>
+      <select name="date" class="ftn ftn10">
+        <option value="01">2176-06-25</option>
+        <option value="01">2176-06-01</option>
+        <option value="01">2176-06-07</option>
+        <option value="01">2176-06-06</option>
+        <option value="01">2176-06-04</option>
+      </select>
+  </p>
+
+     <!--Checkboxarna -->
+     <label>REASON FOR TRAVELING</label><br>
+     <input type="checkbox" name="checkbox0" value="GOING HOME"> GOING HOME <br>
+     <input type="checkbox" name="checkbox1" value="VACATION"> VACATION <br>
+     <input type="checkbox" name="checkbox2" value="VISITING"> VISITING FAMILJ & FREIND <br>
+     <input type="checkbox" name="checkbox3" value="DIPLOMATIC"> DIPLOMATIC MISSION <br>
+     <input type="checkbox" name="checkbox4" value="STUDY"> STUDY <br>
+     <input type="checkbox" name="checkbox5" value="RESEARCH"> RESEARCH <br>
+ </fieldset>
+
+  <div class="seperator10"> </div>
+   <fieldset>
+         <legend class="ftn ftn20">BOOK/CANCEL</legend>
+           <button type="submit" value="Submit" class="ftn15">BOOK</button>
+           <button type="reset" value="Reset" class="ftn15">CANCEL</button>
+   </fieldset>
+   </form>
+              	 <!--// Form-->
+
+
+   <!--*Footer section-->
+   <footer>
+         <div class="seperator10"> </div>
+         <p class="padding10 aligncenter ftn6 fblack">
+         <strong> Av Diyar Parwana </strong>
+        <br>
+         This website is free to copy, distribute and modify, no restrictions <br>   Updated : 2021-03-05  </p>
+         <div class="seperator10"> </div>
+   </footer>
+   <!--/Footer section-->
+
+
+
+   </div>  <!--//Höger column...-->
+  </div>
+
+
+
+</body>
+</html>

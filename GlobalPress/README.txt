@@ -1,0 +1,6 @@
+I just had 1 hour to spend and I did decide to create something...
+Global news is the name of this website template...
+Free for personal use and free for commercial use and no attribution required
+cDo you have ny question? Feel free to ask.
+Email: diyar.parwana@gmail.com
+Regards/ Diyar Parwana

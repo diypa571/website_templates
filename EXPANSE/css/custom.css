@@ -1,0 +1,28 @@
+.sep1{height: 2px;}
+.sep2{height: 4px;}
+.sep3{height: 6px;}
+.sep4{height: 8px;}
+.sep5{height: 10px;}
+
+
+.mig_responsive {
+  width: 100%;
+}
+
+
+.box {
+    padding: 0 5px 0 5px;
+        background-color: #F5F5F5;
+}
+.box .inner {
+    background-color: #F5F5F5;
+}
+
+
+/*
+THis for the slider..
+ */
+img {
+  height: 500px;
+  object-fit: cover;
+}

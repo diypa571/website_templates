@@ -1,0 +1,370 @@
+/*
+Nu är det dags att designa webbsidan för kursen wtfi, Umeå Universitet
+Följande webbsida kommer att vara responsivt
+Jag kommer prioritera grid.
+diypa571@student.liu.se
+*/
+
+body, html {
+margin: 0;
+}
+
+/*
+Följande container kommer att bestämma en  max-wdith
+maximum width, maximala bredden av sidan.
+Relevant bara om bredden på webbläsaren är större än 1100 px;
+*/
+.container {
+max-width:1100px; margin: 0px auto;
+}
+
+
+/* Google map, kartan som finns längst ner, jag har gjort så att kartan så få
+vara fullscreen widh med nedanstående height*/
+.googlemapframe {border:0; width: 100%; height: 250px;}
+
+/* Bildresponsiv, är en klass för att få bilderna att bli reponsiva*/
+.bildresponsiv{
+width: 100%;
+}
+
+
+/* Jag tycker att det är snyggare när logoimg är 20 px flyttat från vänster*/
+.logoimg {
+margin-left:0px;
+}
+
+/*Skrev, men använde inte, bra för att kunna visa relevanta saker...*/
+.billigast{
+-ms-transform: rotate(-20deg); /* IE 9 */
+transform: rotate(-20deg);
+}
+
+/* logo telefon, den gör så att telefonen med 10 px.*/
+.logotelefon {
+margin-right:1px;
+}
+
+/*  Vi backgrunds bild. Klass som ser till bilden blir relativ */
+.bgackgrundsbild {
+  background-image: url("https://cdn.pixabay.com/photo/2020/12/03/03/41/waterfall-5799384_960_720.jpg");
+
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+/*  Texten över första backgrunds bilden, den ska få vara absolute */
+.textintro {
+position: absolute;
+left: 0;
+top: 30%;
+width: 100%;
+text-align: center;
+color: #000;
+}
+
+.textintro span.border {
+padding: 18px;
+letter-spacing: 8px;
+}
+
+
+/*  Följane är för att video filerna ska få vara widh 100% och ha relativa positioner */
+.video {
+position: relative;
+right: 0;
+bottom: 0;
+width: 100%;
+}
+
+
+/* Med följande kan vi aligna texten */
+.textcenter  {
+text-align: center;
+}
+.textcentrum {
+text-align: center;
+}
+.textleft {
+text-align: left;
+}
+
+
+/* Padding  class */
+.padding10  {
+padding: 10px;
+}
+
+
+/* Jag har använd div, sepator class istället för hr... */
+.separator {
+height: 2px;
+}
+
+.separator20 {
+height: 20px;
+
+}
+
+/* rund class som ser till elementen blir rund i hörn */
+.rund {
+border-radius: 2px;
+}
+
+/* Med den här classen kan vi minska bilden när vi har mus över bilden, det kan också vara andra elemen */
+.minimize:hover
+{
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+
+.shadowbottom
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0  ;
+}
+
+
+.shadowtop
+{
+  -webkit-box-shadow: 10px -8px 94px -19px rgba(0,0,0,0.59);
+  -moz-box-shadow: 10px -8px 94px -19px rgba(0,0,0,0.59);
+  box-shadow: 10px -8px 94px -19px rgba(0,0,0,0.59);
+}
+
+
+
+
+/* row class, varje row innehåller olika antal kolumner */
+.row {
+position: relative;
+grid-gap: 8px;
+}
+
+/* header row, som innehåller bara två kolumner, logo till vänster och telefonr till höger*/
+.row2 {
+position: relative;
+}
+
+
+
+
+/* col, som ska vara kolumner till row, word break ser till texten inte går ut ur boxen.*/
+.col {
+position: relative;
+word-break: break-word;
+padding: 10px;
+}
+
+/* här skriver jag clear, för att göra clear bo div columnerna och inte går över varandra.*/
+.col:after{
+content: "";
+display: block;
+clear: both;
+}
+.about:after{
+content: "";
+display: block;
+clear: both;
+}
+
+
+/* För mobila enheter - Media Query, min 300 px gäller följande*/
+
+@media screen and (min-width:300px) {
+.row {
+grid-gap: 8px;
+display: grid;
+grid-template-columns: 100%;
+}
+
+.row2 {
+display: grid;
+grid-template-columns: auto;
+}
+
+.logoimg {
+text-align: center;
+}
+
+.logotelefon {
+text-align: center; margin-right:1px;
+}
+
+
+}
+
+
+
+/* För större mobila enheter - Media Query, min 600 px gäller följande*/
+@media screen and (min-width:600px) {
+.row {
+grid-gap: 8px;
+display: grid;
+grid-template-columns: 100%;
+}
+
+.row2 {
+display: grid;
+grid-template-columns: auto auto;
+}
+
+
+.logoimg {
+text-align: center; margin-left:0px;
+}
+
+
+}
+
+
+/* Detta är för dekstop storlek. Media Query, min 900 px gäller följande*/
+@media screen and (min-width:900px) {
+.row { grid-gap: 8px;
+display: grid;
+grid-template-columns: auto auto auto auto ;
+}
+
+.row2 {
+display: grid;
+grid-template-columns: auto auto;
+}
+
+.logoimg {
+text-align: left; margin-left:0px;
+}
+}
+
+
+
+
+
+
+/*
+I have used the example below from the w3schools.com and modified to work to artnews.com
+*/
+.topnav {
+overflow: hidden;
+color: white;
+
+}
+
+.topnav a {
+float: left;
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+color: white;
+}
+
+.topnav a:hover {
+ color:grey;
+}
+
+.topnav a.active {
+ color:grey;
+}
+
+
+.topnav .icon {
+display: none;
+color: white;
+}
+
+@media screen and (max-width: 650px) {
+.topnav a:not(:first-child) {display: none;}
+
+.topnav a.icon {
+float: right;
+display: block;
+}
+.topnav.responsive {position: relative;}.topnav.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+}
+
+
+
+
+/* Uppgift 3...
+Print Query
+För print, jag vill inte att allt ska skrivas ut.
+Bara relevanta texter får skrivas ut. Slöseri med papper, får tänka på miljö.
+Nedan väljer hur ska webbsidan skrivas ut och vilka elementer ska få vara med.
+*/
+
+@media print {
+body {
+overflow-y: hidden;
+}
+
+.row {
+grid-gap: 8px;
+display: grid;
+grid-template-columns: 300%;
+}
+
+.row2 {
+display: grid;
+grid-template-columns: auto;
+}
+
+.logoimg {
+text-align: center;
+}
+
+.logotelefon {
+text-align: center; margin-right:1px;
+}
+
+.separator  { visibility: hidden;
+}
+
+.separator20   { visibility: hidden;
+}
+
+
+.col  {
+display: grid;
+grid-template-columns: 100%;
+}
+
+video{
+display: none;
+
+}
+
+
+nav  {
+display: none
+
+}
+
+header  {
+display: none;
+
+}
+
+img {
+
+display: none;
+}
+
+iframe {
+display: none;
+}
+
+
+}

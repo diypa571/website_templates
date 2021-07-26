@@ -1,0 +1,267 @@
+/*
+Hej! Jag har designat den här webbsidan inför kursen 1ME32, Webbteknik 1
+Har testa med firefox, chrome och det funferar bra
+diypa571@student.liu.se
+*/
+body, html {
+height: 100%;
+margin: 0;
+font: 400 10px/1.8;
+}
+
+
+#headerbox {
+max-width:1100px; margin: 0px auto;
+}
+
+
+#menubox {
+max-width:1100px; margin: 0px auto;
+}
+
+
+#mainbox {
+max-width:1100px; margin: 0px auto;
+}
+
+#infobox {
+max-width:1100px; margin: 0px auto;
+}
+
+
+#footerbox {
+max-width:1100px; margin: 0px auto;
+}
+
+
+.googlemapframe {border:0; width: 100%; height: 250px;}
+.bildresponsiv{
+width: 100%;
+}
+
+#logo {
+padding: 2px;
+position: absolute;
+-ms-transform: rotate(10deg); /* IE 9 */
+-ms-transform-origin: 20% 40%; /* IE 9 */
+transform: rotate(10deg);
+transform-origin: 20% 40%;
+}
+
+
+.logotext {
+text-align: left; margin-left:20px;
+}
+
+
+.logotelefon {
+text-align: right; margin-right:20px;
+}
+
+
+.navmenu {
+
+padding: 3px; border-radius: 30px 20px;
+}
+
+
+.navmenumargins {
+
+border-radius: 2px 2px;    margin-bottom:2px;
+}
+
+
+
+
+.bgackgrundsbild {
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.bgackgrundsbild {
+background-image: url("../images/haircut.jpg");
+height: 70%;
+}
+
+.textintro {
+position: absolute;
+left: 0;
+top: 40%;
+width: 100%;
+text-align: center;
+color: #000;
+}
+
+.textintro span.border {
+padding: 18px;
+letter-spacing: 8px;
+}
+
+
+
+
+.text-center  {
+text-align: center;
+}
+
+.navbox {
+overflow: hidden;
+}
+
+.padding10  {
+padding: 10px;
+}
+
+.separator {
+height: 2px;
+}
+
+.separator20 {
+height: 20px;
+}
+
+.text-centrum {
+text-align: center;
+}
+
+.rund {
+border-radius: 10%;
+}
+
+.minimize:hover
+{
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+
+
+
+
+.row {
+position: relative;
+grid-gap: 8px;
+}
+
+.header {
+position: relative;
+}
+
+
+.navigation {
+position: relative;
+}
+
+
+.about{
+position: relative;
+}
+
+.col {
+position: relative;
+word-break: break-word;
+padding: 10px;
+}
+
+
+.col:after{
+content: "";
+display: block;
+clear: both;
+}
+
+
+
+.about:after{
+content: "";
+display: block;
+clear: both;
+}
+
+
+.navigation:after{
+content: "";
+display: block;
+clear: both;
+}
+@media screen and (min-width:300px) {
+.row {
+grid-gap: 8px;
+display: grid;
+grid-template-columns: 100%;
+}
+
+.header {
+display: grid;
+grid-template-columns: auto;
+}
+
+.navigation {
+display: grid;
+grid-template-columns: 100%; }
+
+
+
+.about {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: 100%;
+}
+ }
+
+
+
+
+@media screen and (min-width:600px) {
+.row {
+grid-gap: 8px;
+display: grid;
+grid-template-columns: 100%;
+}
+
+.header {
+display: grid;
+grid-template-columns: auto auto;
+}
+
+.navigation {
+display: grid;
+margin-top: -10px;
+grid-template-columns: 100%;
+}
+
+
+.about {
+display: grid;
+grid-gap: 20px;
+grid-template-columns: auto auto;
+}
+
+
+}
+
+@media screen and (min-width:900px) {
+.row { grid-gap: 8px;
+display: grid;
+grid-template-columns: auto auto auto ;
+grid-template-rows: auto auto;
+}
+.header {
+display: grid;
+grid-template-columns: auto auto;
+}
+
+.navigation {
+display: grid;
+grid-gap: 4px;
+grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.about {
+display: grid;
+grid-gap: 20px;
+grid-template-columns: auto auto;
+}
+}

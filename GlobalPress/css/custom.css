@@ -1,0 +1,29 @@
+.sep1{height: 2px;}
+.sep2{height: 4px;}
+.sep3{height: 6px;}
+.sep4{height: 8px;}
+.sep5{height: 10px;}
+
+
+.mig_responsive {
+  width: 100%;
+}
+
+
+.box {
+    padding: 0 5px 0 5px;
+        background-color: #F5F5F5;
+}
+.box .inner {
+    background-color: #F5F5F5;
+}
+
+
+
+.bottomwave {
+  min-height: 100%;
+ background-image: url('../img/bottomwave.svg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+}
